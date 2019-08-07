@@ -1,12 +1,14 @@
 import React from 'react';
 import WeatherData from './WeatherDataComponent';
 import WeatherLocation from './WeatherLocationComponent';
+import WeatherTemperature from './WeatherTemperatureComponent';
 
 function WeatherComponent() {
     return (
         <div className="WeatherComponent">
-            <WeatherData />
-            <WeatherLocation />
+            <WeatherLocation city="Buenos Aires" />
+            <WeatherTemperature />
+            <WeatherData humidity={80} wind={'10m/s'}/>
         </div>
     );
 }

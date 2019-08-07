@@ -1,9 +1,10 @@
 import React from 'react';
 
-function WeatherLocationComponent() {
+function WeatherLocationComponent(props) {
+    let c = props.city;
     return (
         <div className="WeatherLocationComponent">
-            <h1>Summer/ 20º / 80 fh</h1>
+            <h1>{c}</h1>
         </div>
     );
 }
