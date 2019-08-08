@@ -7,7 +7,7 @@ function WeatherComponent() {
     return (
         <div className="WeatherComponent">
             <WeatherLocation city="Buenos Aires" />
-            <WeatherTemperature />
+            <WeatherTemperature temperature='12º' weatherState="cloudy"/>
             <WeatherData humidity={80} wind={'10m/s'}/>
         </div>
     );
