@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 WeatherLocationComponent.propTypes = {
     city: PropTypes.string.isRequired
 }
@@ -8,7 +9,7 @@ WeatherLocationComponent.propTypes = {
 function WeatherLocationComponent(props) {
     const c = props.city;
     return (
-        <div className="WeatherLocationComponent">
+        <div className="WeatherLocation">
             <h1>{c}</h1>
         </div>
     );

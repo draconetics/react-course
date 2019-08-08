@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './WeatherDataComponent.css'
+
 WeatherDataComponent.propTypes = {
     humidity: PropTypes.number.isRequired,
     wind: PropTypes.string.isRequired
@@ -26,10 +28,9 @@ function WeatherDataComponent({humidity, wind}) {
     console.log(objArray);
  */
     return (
-        <div className="WeatherDataComponent">
-            
-            <span>Humidity:{humidity} % -</span>
-            <span>Wind: {wind}</span>
+        <div className="WeatherData">
+            <p>Humidity:{humidity} % -</p>
+            <p>Wind: {wind}</p>
         </div>
     );
 }

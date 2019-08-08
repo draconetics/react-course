@@ -1,0 +1,14 @@
+.WeatherContainer{
+    background-color: #eeeeee;
+    overflow: auto;
+}
+
+.WeatherData {
+    width: 50%;
+    float: right;
+}
+
+.WeatherTemperature {
+    width: 50%;
+    float: left;
+}
