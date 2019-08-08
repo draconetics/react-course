@@ -1,20 +1,28 @@
 import React from 'react';
 //import WeateherIcons from 'react-weathericons';
 import { WiDaySunny, WiCloud, WiCloudy, WiRain, WiSnow, WiWindy} from 'weather-icons-react';
+import {
+    CLOUD,
+    CLOUDY,
+    SUN,
+    RAIN,
+    SNOW,
+    WINDY
+} from './../shared/weather';
 
 const getWeatherIcon = (weatherState) => {
     switch(weatherState) {
-        case "cloud":
+        case CLOUD:
             return <WiCloud size={60} color='gray' />;
-        case "cloudy":
+        case CLOUDY:
             return <WiCloudy size={50} color='gray' />;
-        case "sun":
+        case SUN:
             return <WiDaySunny size={50} color='yellow' />;
-        case "rain":
+        case RAIN:
             return <WiRain size={60} color='lightblue' />;
-        case "snow":
+        case SNOW:
             return <WiSnow size={60} color='blue' />;
-        case "windy":
+        case WINDY:
             return <WiWindy size={60} color='lightblue' />;
         default:
             return <WiDaySunny size={60} color='yellow' />
