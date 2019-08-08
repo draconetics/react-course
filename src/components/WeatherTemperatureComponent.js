@@ -1,6 +1,7 @@
 import React from 'react';
 //import WeateherIcons from 'react-weathericons';
 import { WiDaySunny, WiCloud, WiCloudy, WiRain, WiSnow, WiWindy} from 'weather-icons-react';
+import PropTypes from 'prop-types';
 import {
     CLOUD,
     CLOUDY,
@@ -9,6 +10,7 @@ import {
     SNOW,
     WINDY
 } from './../shared/weather';
+
 
 const getWeatherIcon = (weatherState) => {
     switch(weatherState) {
@@ -27,6 +29,11 @@ const getWeatherIcon = (weatherState) => {
         default:
             return <WiDaySunny size={60} color='yellow' />
     }
+}
+
+WeatherTemperatureComponent.propTypes = {
+    temperature: PropTypes.number.isRequired,
+    weatherState: PropTypes.string
 }
 
 export default function WeatherTemperatureComponent({temperature, weatherState}) {
