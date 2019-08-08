@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function WeatherLocationComponent(props) {
     let c = props.city;
     return (
