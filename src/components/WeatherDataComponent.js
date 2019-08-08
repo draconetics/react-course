@@ -1,5 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
+WeatherDataComponent.propTypes = {
+    humidity: PropTypes.number.isRequired,
+    wind: PropTypes.string.isRequired
+}
 
 function WeatherDataComponent({humidity, wind}) {
   /*  let {city} = props;

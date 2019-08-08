@@ -10,7 +10,7 @@ function WeatherComponent() {
     return (
         <div className="WeatherComponent">
             <WeatherLocation city="Buenos Aires" />
-            <WeatherTemperature /* temperature={12} */ weatherState={CLOUD}/>
+            <WeatherTemperature  temperature={12}  weatherState={CLOUD}/>
             <WeatherData humidity={80} wind={'10m/s'}/>
         </div>
     );

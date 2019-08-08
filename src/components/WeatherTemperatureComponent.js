@@ -40,7 +40,7 @@ export default function WeatherTemperatureComponent({temperature, weatherState})
     return (
         <div className="WeatherTemperature">
             {getWeatherIcon(weatherState)}
-            <span className="temperature">{temperature}</span>
+            <span className="temperature">{temperature + 'º'}</span>
         </div>
     );
 }
