@@ -9,9 +9,9 @@ import {
     RAIN,
     SNOW,
     WINDY
-} from './../shared/weather';
-import WeatherData from './WeatherDataComponent';
-import './WeatherTemperatureComponent.css';
+} from '../../../shared/weather';
+
+import './style.css';
 
 const getWeatherIcon = (weatherState) => {
     switch(weatherState) {
@@ -32,19 +32,16 @@ const getWeatherIcon = (weatherState) => {
     }
 }
 
-WeatherTemperatureComponent.propTypes = {
+WeatherTemperature.propTypes = {
     temperature: PropTypes.number.isRequired,
     weatherState: PropTypes.string
 }
 
-export default function WeatherTemperatureComponent({temperature, weatherState}) {
+export default function WeatherTemperature ({temperature, weatherState}) {
     return (
-        <div className="WeatherContainer">
             <div className="WeatherTemperature">
                 {getWeatherIcon(weatherState)}
                 <span className="temperature">{temperature + 'º'}</span>
             </div>
-            <WeatherData humidity={80} wind={'10m/s'}/>
-        </div>
     );
 }

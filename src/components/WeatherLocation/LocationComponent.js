@@ -2,18 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-WeatherLocationComponent.propTypes = {
+LocationComponent.propTypes = {
     city: PropTypes.string.isRequired
 }
 
-function WeatherLocationComponent(props) {
+function LocationComponent(props) {
     const c = props.city;
     return (
-        <div className="WeatherLocation">
+        <div className="Location">
             <h1>{c}</h1>
         </div>
     );
 }
 
 
-export default WeatherLocationComponent;
+export default LocationComponent;

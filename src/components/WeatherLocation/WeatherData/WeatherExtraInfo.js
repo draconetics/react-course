@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './WeatherDataComponent.css'
 
-WeatherDataComponent.propTypes = {
+WeatherExtraInfo.propTypes = {
     humidity: PropTypes.number.isRequired,
     wind: PropTypes.string.isRequired
 }
 
-function WeatherDataComponent({humidity, wind}) {
+function WeatherExtraInfo({humidity, wind}) {
   /*  let {city} = props;
     let person = {
         name:"",
@@ -28,11 +27,11 @@ function WeatherDataComponent({humidity, wind}) {
     console.log(objArray);
  */
     return (
-        <div className="WeatherData">
+        <div className="WeatherExtraInfo">
             <p>Humidity:{humidity} % -</p>
             <p>Wind: {wind}</p>
         </div>
     );
 }
 
-export default WeatherDataComponent;
+export default WeatherExtraInfo;
